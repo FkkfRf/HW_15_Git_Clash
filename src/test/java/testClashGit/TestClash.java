@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.util.Random;
+
 public class TestClash {
 
     @BeforeAll
@@ -13,9 +15,13 @@ public class TestClash {
 
 
     @Test
-    void simpleTest(){
-        System.out.println("### simpleTest |");
-        Assertions.assertTrue(2>1);
-
+    void simpleTest1() {
+        System.out.println("### simpleTest1 |");
+        Assertions.assertTrue(1 < 5);
+    }
+        @Test
+        void simpleTest2(){
+            System.out.println("### simpleTest2 |");
+            Assertions.assertTrue(1<5);
     }
 }
