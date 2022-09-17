@@ -1,27 +1,26 @@
 package testClashGit;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.util.Random;
 
 public class TestClash {
-
+// переменная для сравнения с целым в тестах
+    public int nxt;
     @BeforeAll
     static void setUp(){
         System.out.println("### @BeforAll |");
+        int nxt = new Random().nextInt(10);
+        System.out.println("Random number between 0 and 10 is : " + nxt);
     }
-
-
     @Test
     void simpleTest1() {
         System.out.println("### simpleTest1 |");
-        Assertions.assertTrue(5 < 1);
+        Assertions.assertTrue(nxt >= 5 );
     }
         @Test
         void simpleTest2(){
             System.out.println("### simpleTest2 |");
-            Assertions.assertTrue(1<3);
+            Assertions.assertTrue(nxt <= 3);
     }
 }
