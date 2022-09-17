@@ -17,11 +17,11 @@ public class TestClash {
     @Test
     void simpleTest1() {
         System.out.println("### simpleTest1 |");
-        Assertions.assertTrue(5 < 1);
+        Assertions.assertTrue(1<13);
     }
-        @Test
-        void simpleTest2(){
-            System.out.println("### simpleTest2 |");
-            Assertions.assertTrue(1<3);
+    @Test
+    void simpleTest2(){
+        System.out.println("### simpleTest2 |");
+        Assertions.assertTrue(15>2);
     }
 }
