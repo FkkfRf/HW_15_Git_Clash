@@ -16,11 +16,11 @@ public class TestClash {
     @Test
     void simpleTest1() {
         System.out.println("### simpleTest1 |");
-        Assertions.assertFalse(nxt >= 5 );
     }
         @Test
         void simpleTest2(){
             System.out.println("### simpleTest2 |");
+            Assertions.assertFalse(nxt < 0);
             Assertions.assertFalse(nxt <= 3);
     }
 }
