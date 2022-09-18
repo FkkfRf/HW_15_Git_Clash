@@ -21,6 +21,6 @@ public class TestClash {
         void simpleTest2(){
             System.out.println("### simpleTest2 |");
             Assertions.assertFalse(nxt < 0);
-            Assertions.assertFalse(nxt <= 3);
+            Assertions.assertFalse(nxt > 10);
     }
 }
